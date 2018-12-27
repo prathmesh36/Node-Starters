@@ -42,6 +42,13 @@ app.get('/about',(req,res)=>{
 
 });
 
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs',{
+        pageTitle:'My Projects'
+    });
+
+});
+
 app.get('/errorpage',(req,res)=>{
     res.send({
         ErrorMessage:"Access Denied: Page Under Construction"
